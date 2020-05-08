@@ -1,0 +1,116 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+/*remove scrollbar for chrome*/
+
+body::-webkit-scrollbar{
+	display:none;
+}
+
+/*end remove scrollbar*/
+
+a {
+	color:red;
+}
+
+.menu {
+	height:40px;
+	width:40px;
+	background-color:lightgray;
+	position:fixed;
+	right:20px;
+	top:20px;
+	cursor:pointer;
+}
+
+.close {
+	height:40px;
+	width:40px;
+	background-color:lightyellow;
+	position:fixed;
+	right:20px;
+	top:20px;
+	cursor:pointer;
+	z-index:10;
+	display:none;
+}
+
+.close.show {
+	display:block;
+}
+
+.essay {
+	width:50%;
+	height:100vh;
+	background-color:grey;
+	position:fixed;
+	right:0px;
+	top:0px;
+	overflow:scroll;
+	margin-right:-50%;
+	transition:.65s;
+}
+
+.essay.slide {
+	margin-right:0;
+	transition:.65s;
+}
+
+.essay::-webkit-scrollbar{
+	display:none;
+}
+
+.essay h1 {
+	font-size:50px;
+	text-align:center;
+}
+
+.essay p {
+	padding:20px;
+
+}
+
+.container {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.item {
+
+}
+
+.item img {
+	width:100%;
+	display:block;
+}
+
+.w1of1 {
+	width:100%;
+}
+
+.under {
+	transform:scale(-1,-1);
+	display:block;
+}
+
+.info {
+	
+	position:fixed;
+	right:0px;
+	top:0px;
+	height:900px;
+	width:33%;
+	background-color:black;
+	opacity:50%;
+}
+
+.text {
+	opacity:100%;
+	padding-top:90px;
+	margin:auto;
+	font-family:helvetica;
+	color:white;
+}
+
