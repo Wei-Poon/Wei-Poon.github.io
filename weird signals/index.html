@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>weird signals Gary</title>
+    <title>Weird Signals</title>
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
   	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
   	<script src="assets/js/jquery-3.4.1.min.js"></script>
@@ -17,41 +17,96 @@
 
     <!-- menu -->
 
-    <div class="menu"></div>
+    <div class="menu">
+      <div class="menu1"></div>
+      <div class="menu2"></div>
+      <div class="menu3"></div>
+    </div>
 
-    <div class="close"></div>
+    <div class="close">
+      <div class="arrow"></div>
+    </div>
 
     <!-- end menu -->
 
     <!-- essay -->
 
     <div class="essay">
-      <h1>Lorem</h1><br>
-      <h1>ipsum</h1><br>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <div class="essay1">
+        <br>
+        <h1>PROCEDURAL GENERATION:</h1>
+        <h2>CREATING 3D WORLDS WITH DEEP LEARNING</h2><br>
+        <h3>WHAT IS PROCEDURAL GENERATION?</h3>
+        <p>
+          Procedural generation is two big words for one simple thing: the creation of data by computers. Procedural generation is usually used to create content for video games or animated movies, such as landscapes, 3D objects, character designs, animations, or non-player character dialogue. One famous example of this is the planets generated in “ No Man’s Sky.” In this game, players can explore 18 quintillion (18,000,000,000,000,000,000) unique planets and moons, which were generated algorithmically by computers.
+        </p>
+        <p>
+          The amazing thing about procedural generation is that infinite unique possibilities can be created with little work from humans. (Well, on second thought, maybe not little work from humans, but at least a “small amount” in comparison to the infinite number of possible generations.) We decided to use procedural generation - specifically deep learning procedural generation - to create our own 3D worlds.
+        </p><br>
+        <h3>DATA COLLECTION</h3>
+        <h4>WHY DO WE NEED DATA?</h4>
+        <p>
+          Input data needs to be collected before implementing deep neural networks . Neural networks are computer programs that greedily soak up data and learn through what we like to call “osmosis.” In reality, the learning process consists of continually updating small numbers called weights and biases that allow the network to generate data, such as images or likelihood values (e.g., the likelihood that an image is a cat).To generate 3D worlds, we needed 3D model data and colour data. We collected terrain height maps for the 3D part of the project, and satellite images for the colour part of the project.
+        </p>
+        <h4>TERRAIN MAPS AND WEB SCRAPING</h4>
+        <p>
+          To obtain the terrain map data, we scraped Terrain.Party. When we first found this website, we thought, “Perfect! We’ve got a dataset and we’ve barely even started!” It turns out that web scraping (getting large amounts of data from the web) is not that easy. We got help from one of our master-web-scraper friends, Bret Nestor, who wrote code using FireFox webdriver libraries to download and extract height maps. After many hours of scraping, we got over 10,000 height map images. Unfortunately though, not all of the images were usable, so we needed to clean the data, as described in the next section.
+        </p>
+        <h4>CLEANING TERRAIN DATA</h4>
+        <p>
+          After obtaining the height maps, we noticed that some of them were duplicates, had little variation in depth (e.g., they were almost completely grey images), or were very dark. Thus, we wrote a script (delDarkUnvariedIdentical.py) to delete the unnecessary images and “clean” the data. Finally, to decrease our network’s training time, we re-sized the images to 256x256px (scaleToWidthxWidth.py). Before we could use the images as input for our neural network, we needed to flatten (or “pickle”) them. Our final “pickling” script (prepDataset.py) also rotates and flips the images to increase the total amount of training data. Rotation and flipping also reduces bias in the dataset to ensure the network doesn’t generate terrains that are purely in a certain direction.
+        </p>
+        <h4>STYLE IMAGE DATA COLLECTION</h4>
+        <p>
+          Style images were obtained through USGS’s Earth as Art site. These images were very large (over 7000px in both height and width), so we ended up resizing them to about 512px, and finally to 256px. Although the images lose detail when scaled, we figured the images contained enough information for our style transfer network to learn.
+        </p>
+        <h3>HEIGHT MAP GENERATION</h3>
+        <h4>GENERATIVE ADVERSARIAL NETWORK</h4>
+        <p>
+          To generate our own height maps, we used a Generative Adversarial Network (GAN). GANs consist of a generator network, which generates fake images, and a discriminator network, which discriminates between real images and fake images. This generator-discriminator pair has been compared to a counterfeiter and the police. The counterfeiter (generator) creates increasingly realistic fake bills, and the police (discriminator) become increasingly good at discriminating between real and fake money. Essentially, as the police learn to find the fake bills, the counterfeiter needs to create better-looking bills, resulting in hyper-realistic bills in the long run. GANs work the same way. As the discriminator learns to spot fake images, the generator learns to create more realistic images.
+        </p>
+        <h3>COLOURING THE HEIGHT MAPS WITH STYLE TRANSFER</h3>
+        <h4>FAST STYLE TRANSFER</h4>
+        <p>
+          Fast style transfer refers to the concept of taking two images - a content image and a style image - and combining the features to produce an output image with the content of one image and the style of another. It does this by generating a loss to both a style and content image and creating an output image that tries to minimize this loss. It uses a gram matrix , which is a matrix that is multiplied with the transpose of itself, to find the style of the image and compare it with the original. Getting the distance between this matrix and the original style gram matrix gives us the style loss. A similar procedure can be done to find content loss. The model calculates the total loss by summing these two values. Our style transfer network uses VGG19, which is a 19-layer neural network, to identify both style and content of a picture, among many other features.
+        </p>
+        <a href="http://www.mit.edu/~jessicav/6.S198/Blog_Post/ProceduralGeneration.html?fbclid=IwAR2an6sProfBMvUZ2OF_K4qLHAJBMdN4yn_qUFBItkcXUHRbl5nLgVSgQ8U" target="_blank"><h4 class="link">...MORE</h4></a><br><br>
+      </div>
+      <div class="essay2">
+        <br>
+        <h1>something about terraforming</h1>
+        <h2>havent found an essay that i like yet :c</h2><br>
+        <h3>will get around to it before the end of sem c:</h3>
+        <p>
+         
+        </p>
+        <a href="https://www.youtube.com/watch?v=cPi6OTCGLF0&fbclid=IwAR0A5mkf9V-H0ooHXxEQNNed-broJO1G2CFjCPeH-RV2cBzlYCSYLF2Q0-E" target="_blank"><h4 class="link">BREAKING NEWS</h4></a><br><br>
+      </div>
+      <div class="essay3">
+        <br>
+        <h1>Are we living in a computer simulation?</h1>
+        <h2>I don’t know. Probably.</h2><br>
+        <h3>Why this computer scientist thinks reality might be a video game.</h3>
+        <p>
+          Are we living in a computer simulation?
+        </p>
+        <p>
+          The question seems absurd. Yet there are plenty of smart people who are convinced that this is not only possible but perhaps likely.
+        </p> 
+        <p>
+          In an influential paper that laid out the theory, the Oxford philosopher Nick Bostrom showed that at least one of three possibilities is true: 1) All human-like civilizations in the universe go extinct before they develop the technological capacity to create simulated realities; 2) if any civilizations do reach this phase of technological maturity, none of them will bother to run simulations; or 3) advanced civilizations would have the ability to create many, many simulations, and that means there are far more simulated worlds than non-simulated ones.
+        </p>
+        <p>
+          We can’t know for sure which of these is the case, Bostrom concludes, but they’re all possible — and the third option might even be the most probable outcome. It’s a difficult argument to wrap your head around, but it makes a certain amount of sense.
+        </p>
+        <p>
+          Rizwan Virk, a computer scientist and video game designer, has just released a new book, The Simulation Hypothesis, that explores Bostrom’s argument in much greater detail and traces the path from today’s technology to what he calls the “Simulation Point,” the moment at which we could realistically build a Matrix-like simulation.
+        </p> 
+        <p>
+          I know nothing about computer science, but this idea that we’re all characters in an advanced civilization’s video game is, well, kind of awesome. So I reached out to Virk and asked him to break it down for me.
+        </p>
+        <a href="https://www.vox.com/future-perfect/2019/4/10/18275618/simulation-hypothesis-matrix-rizwan-virk" target="_blank"><h4 class="link">...MORE</h4></a><br><br>
+      </div>
     </div>
 
     <!-- end essay -->
@@ -82,8 +137,11 @@
 
     <div class="container layer3">
       <div class="item w1of1">
-        <img src="assets/images/3city.gif"> 
+        <img src="assets/images/3city.gif">
       </div>
+      <div class="glitch glayer3">
+        <img src="assets/images/glitchs.gif">
+      </div>  
     </div>
 
     <!-- end layer3 -->
@@ -94,6 +152,9 @@
       <div class="item w1of1">
         <img src="assets/images/4trains.gif"> 
       </div>
+      <div class="glitch2 glayer4">
+        <img src="assets/images/glitchs2.gif">
+      </div>  
     </div>
 
     <!-- end layer4 -->
@@ -134,6 +195,9 @@
       <div class="item w1of1">
         <img src="assets/images/8caves.gif"> 
       </div>
+      <div class="glitch2 glayer8">
+        <img src="assets/images/glitchs2.gif">
+      </div>  
     </div>
 
     <!-- end layer8 -->
@@ -142,13 +206,21 @@
 
     <div class="container layer9">
       <div class="item w1of1">
-        <img src="assets/images/9diamonds.gif"> 
+        <img src="assets/images/9diamonds.gif">
       </div>
     </div>
 
     <!-- end layer9 -->
 
     <!-- end upper -->
+
+    <!-- middle -->
+
+    <div class="container layer10">
+      <div class="item w1of1">
+        <img src="assets/images/middle.png">
+      </div>
+    </div>
 
     <!-- under -->
 
@@ -158,6 +230,9 @@
       <div class="item w1of1">
         <img src="assets/images/8caves.gif"> 
       </div>
+      <div class="glitch gulayer1">
+        <img src="assets/images/glitchs.gif">
+      </div>
     </div>
 
     <!-- end under1 -->
@@ -166,8 +241,11 @@
 
     <div class="container under layer2">
       <div class="item w1of1">
-        <img src="assets/images/9diamonds.gif"> 
+        <img src="assets/images/9diamonds.gif">
       </div>
+      <div class="glitch2 gulayer2">
+        <img src="assets/images/glitchs2.gif">
+      </div> 
     </div>
 
     <!-- end under2 -->
@@ -178,6 +256,9 @@
       <div class="item w1of1">
         <img src="assets/images/7water.gif"> 
       </div>
+      <div class="glitch2 gulayer3">
+        <img src="assets/images/glitchs2.gif">
+      </div> 
     </div>
 
     <!-- end under3 -->
@@ -187,6 +268,9 @@
     <div class="container under layer4">
       <div class="item w1of1">
         <img src="assets/images/5excav.gif"> 
+      </div>
+      <div class="glitch gulayer4">
+        <img src="assets/images/glitchs.gif">
       </div>
     </div>
 
@@ -208,6 +292,9 @@
       <div class="item w1of1">
         <img src="assets/images/4trains.gif"> 
       </div>
+      <div class="glitch2 gulayer6">
+        <img src="assets/images/glitchs2.gif">
+      </div> 
     </div>
 
     <!-- end under6 -->
@@ -228,6 +315,9 @@
       <div class="item w1of1">
         <img src="assets/images/11clouds.gif"> 
       </div>
+      <div class="glitch gulayer8">
+        <img src="assets/images/glitchs.gif">
+      </div>
     </div>
 
     <!-- end under8 -->
@@ -238,6 +328,12 @@
       <div class="item w1of1">
         <img src="assets/images/12stars.gif"> 
       </div>
+      <div class="glitch gulayer9a">
+        <img src="assets/images/glitchs.gif">
+      </div>
+      <div class="glitch2 gulayer9b">
+        <img src="assets/images/glitchs2.gif">
+      </div> 
     </div>
 
     <!-- end under9 -->
