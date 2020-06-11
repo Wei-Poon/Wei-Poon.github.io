@@ -1,0 +1,87 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+a {
+	color:red;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+	display:flex;
+	width:60vw;
+	
+}
+
+.bg {
+	background-image:url("background/background.jpg");
+	background-size:cover;
+}
+
+.item {
+	width:30vw;
+	margin:auto;
+	display:flex;
+	z-index:2; 
+}
+
+.title {
+	font-size:15vw;
+	font-style:italic;
+	text-align:right;
+	padding-top:250px;
+	padding-right:300px;
+}
+
+.lv1 {
+	
+}
+
+.lv2 {
+	
+}
+
+.lv3 {
+	
+}
+
+.lv4 {
+	 
+}
+
+.lv5 {
+	padding-top:150px; 
+}
+
+
+/*.header {
+	border-top:3px solid blue;
+	color:blue;
+	padding:20px;
+	display:flex;
+	cursor:pointer;
+}
+
+.header:hover {
+	background-color:gray;
+	opacity:50%;
+}
+
+.item {
+	width:33.33%;
+}
+
+.title {
+	font-size:24vw;
+	text-transform: uppercase;
+}
+
+.toggle {
+	padding:20px;
+	color:red;
+	display:none;
+}*/
