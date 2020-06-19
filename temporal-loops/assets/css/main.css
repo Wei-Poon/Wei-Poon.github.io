@@ -20,7 +20,21 @@ img {
 .bg {
 	background-image:url("background/background.jpg");
 	background-size:cover;
+	z-index:-3;
 }
+
+.bg2 {
+	background-image:url(background/interior.png);
+	background-size:30vw;
+	background-repeat:no-repeat;
+}
+
+.picture {
+	background-size:60vw;
+
+
+}
+
 
 .item {
 	width:30vw;
@@ -38,7 +52,7 @@ img {
 }
 
 .lv1 {
-	
+	transition:.65s;
 }
 
 .lv2 {
@@ -55,8 +69,43 @@ img {
 
 .lv5 {
 	padding-top:150px; 
+	transition:3s;
 }
 
+.lv1.slide {
+	margin-right:-10vw;
+	transition:.65s;
+}
+
+.lv2.slide {
+	margin-right:-10vw;
+	transition:.65s;
+}
+
+.lv3.slide {
+	margin-right:-10vw;
+	transition:.65s;
+}
+
+.lv4.slide {
+	margin-right:-10vw;
+	transition:.65s;
+}
+
+.lv5.slide {
+	margin-right:-10vw;
+	transition:3s;
+}
+
+.placeholder {
+	z-index:-2;
+	height:4000px;
+	width:300px;
+	outline:2px;
+	bottom:0px;
+	display:flex;
+
+}
 
 /*.header {
 	border-top:3px solid blue;
