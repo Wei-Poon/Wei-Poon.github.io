@@ -27,9 +27,13 @@ $(document).ready(function () {
     $(".close").removeClass("show");
   });
 
-  $("html,body").scrollTop(0);
+  $.when( scrollTop() ).done(function() {
+       setTimeout(scrollHeight, 1200);
+  });
 
-  setTimeout(scrollHeight,200);  
+  function scrollTop() {
+    $('html,body').scrollTop(0);
+   }  
 
   $(window).on("resize", function () {
     scrollHeight();
@@ -39,7 +43,7 @@ $(document).ready(function () {
     var div = $(".auto");
     var bottom = div.offset().top + div.height();
     console.log(bottom);
-    $("body,html").animate({ scrollTop: bottom }, 120000);
+    $("body,html").animate({ scrollTop: bottom }, 30000);
   }
 
 });
