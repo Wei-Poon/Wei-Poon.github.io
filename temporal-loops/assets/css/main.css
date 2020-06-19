@@ -23,24 +23,18 @@ img {
 	z-index:-3;
 }
 
-.bg2 {
-	background-image:url(background/interior.png);
-	background-size:30vw;
-	background-repeat:no-repeat;
+.float {
+	height:25vw;
+	width:10vw;
 }
-
-.picture {
-	background-size:60vw;
-
-
-}
-
 
 .item {
 	width:30vw;
 	margin:auto;
 	display:flex;
 	z-index:2; 
+	position:relative;
+	cursor:crosshair;
 }
 
 .title {
@@ -51,29 +45,21 @@ img {
 	padding-right:300px;
 }
 
-.lv1 {
-	transition:.65s;
-}
-
-.lv2 {
-	
-}
-
-.lv3 {
-	
-}
-
-.lv4 {
-	 
-}
 
 .lv5 {
 	padding-top:150px; 
 	transition:3s;
 }
 
-.lv1.slide {
-	margin-right:-10vw;
+.lv1Ext {
+	position:absolute;
+	transition:.65s;
+	left:0;
+}
+
+.lv1Ext.slide {
+	position:absolute;
+	left:100vw;
 	transition:.65s;
 }
 
@@ -97,15 +83,6 @@ img {
 	transition:3s;
 }
 
-.placeholder {
-	z-index:-2;
-	height:4000px;
-	width:300px;
-	outline:2px;
-	bottom:0px;
-	display:flex;
-
-}
 
 /*.header {
 	border-top:3px solid blue;

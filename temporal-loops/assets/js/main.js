@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	console.log("im ready bruh");
 
-	$('.lv1').click(function(){
-		$('.lv1').addClass("slide");
+	$('.lv1Ext').click(function(){
+		$('.lv1Ext').addClass("slide");
 	});
 
 	$('.lv2').click(function(){
@@ -20,6 +20,10 @@ $(document).ready(function(){
 
 	$('.lv5').click(function(){
 		$(".lv5").addClass("slide");
+	});
+
+	$('.floorInt').click(function(){
+		$(".lv1Ext").removeClass("slide");
 	});
 
 	// $(".menu1").click(function () {

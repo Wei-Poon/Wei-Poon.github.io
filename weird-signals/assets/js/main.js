@@ -26,4 +26,20 @@ $(document).ready(function () {
     $(".essay3").removeClass("slide");
     $(".close").removeClass("show");
   });
+
+  $("html,body").scrollTop(0);
+
+  setTimeout(scrollHeight,200);  
+
+  $(window).on("resize", function () {
+    scrollHeight();
+  });
+
+  function scrollHeight() {
+    var div = $(".auto");
+    var bottom = div.offset().top + div.height();
+    console.log(bottom);
+    $("body,html").animate({ scrollTop: bottom }, 120000);
+  }
+
 });
