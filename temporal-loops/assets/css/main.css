@@ -7,9 +7,15 @@ a {
 	color:red;
 }
 
+/*removing scrollbar on PC*/
+
 ::-webkit-scrollbar {
   display: none;
 }
+
+/*end remove scrollbar*/
+
+/*extra image properties*/
 
 img {
 	display:flex;
@@ -17,42 +23,78 @@ img {
 	
 }
 
+/*end extra image properties*/
+
+/*background*/
+
 .bg {
 	background-image:url("background/background.jpg");
 	background-size:cover;
 	z-index:-3;
 }
 
+/*end background*/
+
+/*floating sidebar*/
+
 .float {
+	display:block;
 	height:7vw;
 	width:7vw;
-	background-color:blue;
-	border:3px solid red;
+	background-color:gray;
+	border:2px solid lightgray;
 	position:fixed;
-	left:7vw;
+	left:14vw;
+	font-size:1.5vw;
+	text-align:center;
+	line-height:7vw;	
 }
+
+/*floating slidebar hover*/
+
+.float:hover {
+	cursor:pointer;
+	opacity:80%;
+}
+
+/*end floating sidebar hover*/
 
 .flv5 {
 	top:7vw;
 }
 
 .flv4 {
-	top:14vw;
+	top:14.2vw;
 }
 
 .flv3 {
-	top:21vw;
+	top:21.4vw;
 }
 
 .flv2 {
-	top:28vw;
+	top:28.6vw;
 }
 
 .flv1 {
-	top:35vw;
+	top:35.8vw;
 }
 
-/*kill me why doesnt this work????*/
+/*end floating sidebar*/
+
+/*title*/
+
+.title {
+	font-size:15vw;
+	font-style:italic;
+	text-align:right;
+	padding-top:250px;
+	padding-right:300px;
+	padding-bottom:400px;
+}
+
+/*end title*/
+
+/*floors*/
 
 .item {
 	width:30vw;
@@ -63,77 +105,93 @@ img {
 	cursor:crosshair;
 }
 
-.title {
-	font-size:15vw;
-	font-style:italic;
-	text-align:right;
-	padding-top:250px;
-	padding-right:300px;
+.lv5Ext {
+	position:absolute; 
+	transition:1s;
+	left:0;
 }
 
+.lv5Ext.slide {
+	position:absolute;
+	transition:1s;
+	left:100vw;
+}
 
-.lv5 {
-	padding-top:150px; 
-	transition:3s;
+.lv4Ext {
+	position:absolute;
+	transition:1s;
+	left:0;
+}
+
+.lv4Ext.slide {
+	position:absolute;
+	transition:1s;
+	left:100vw;
+}
+
+.lv3Ext {
+	position:absolute;
+	transition:1s;
+	left:0;
+}
+
+.lv3Ext.slide {
+	position:absolute;
+	transition:1s;
+	left:100vw;
+}
+
+.lv2Ext {
+	position:absolute;
+	transition:1s;
+	left:0;
+}
+
+.lv2Ext.slide {
+	position:absolute;
+	transition:1s;
+	left:100vw;
 }
 
 .lv1Ext {
 	position:absolute;
-	transition:.65s;
+	transition:1s;
 	left:0;
 }
 
 .lv1Ext.slide {
 	position:absolute;
-	left:100vw;
-	transition:.65s;
+	transition:1s;
+	left:100vw;	
 }
 
-.lv2.slide {
-	margin-right:-10vw;
-	transition:.65s;
+/*end floors*/
+
+/*floors hover*/
+
+.lv5Ext:hover {
+	opacity:80%;
+	transition:.5s;	
 }
 
-.lv3.slide {
-	margin-right:-10vw;
-	transition:.65s;
+.lv4Ext:hover {
+	opacity:80%;
+	transition:.5s;
 }
 
-.lv4.slide {
-	margin-right:-10vw;
-	transition:.65s;
+.lv3Ext:hover {
+	opacity:80%;
+	transition:.5s;
 }
 
-.lv5.slide {
-	margin-right:-10vw;
-	transition:3s;
+.lv2Ext:hover {
+	opacity:80%;
+	transition:.5s;
 }
 
-
-/*.header {
-	border-top:3px solid blue;
-	color:blue;
-	padding:20px;
-	display:flex;
-	cursor:pointer;
+.lv1Ext:hover {
+	opacity:80%;
+	transition:.5s;
 }
 
-.header:hover {
-	background-color:gray;
-	opacity:50%;
-}
-
-.item {
-	width:33.33%;
-}
-
-.title {
-	font-size:24vw;
-	text-transform: uppercase;
-}
-
-.toggle {
-	padding:20px;
-	color:red;
-	display:none;
-}*/
+/*end floors hover*/
