@@ -10,16 +10,20 @@ a {
 }
 
 .lesion {
-	width:600px;
+	width:350px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:100px;
+	margin-top:90px;
 	transform:skew(0deg);
+	border:3px solid magenta;
+	box-shadow:0px 0px 15px #ff66ff;
+	background-color:#330033;
 	transition:1s;
 }
 
 .lesion img {
 	width:100%;
+	margin:auto;
 	/*display:block; to remove
 	descender element and to
 	display at 100%*/
@@ -34,7 +38,7 @@ a {
 
 .links {
 	position:fixed;
-	bottom:140px;
+	bottom:200px;
 	left:30px;
 	font-family:arial;
 }
@@ -42,9 +46,9 @@ a {
 .link {
 	width:500px;
 	height:50px;
-	border:3px solid #00ffff;
-	box-shadow:0px 0px 15px #0000ff;
-	background-color:#000033;
+	border:3px solid magenta;
+	box-shadow:0px 0px 15px #ff66ff;
+	background-color:#330033;
 	padding-top:7px;
 	margin-bottom:-3px;
 }
@@ -52,29 +56,34 @@ a {
 .link2 {
 	width:250px;
 	height:50px;
-	border:3px solid #00ffff;
-	box-shadow:0px 0px 15px #0000ff;
-	background-color:#000033;
+	border:3px solid magenta;
+	box-shadow:0px 0px 15px #ff66ff;
+	background-color:#330033;
 	padding-top:7px;
 	margin-bottom:-3px;
 }
 
 .links a {
 	text-decoration:none;
-	color:#00ffff;
+	color:magenta;
 	font-size:1.5vw;
 	font-family:futura;
 	font-style:italic;
 	text-shadow: 0px 0px 5px #0000ff; 
 	display:block;
+	transition:.7s;
 	z-index:2;
 }
 
 .links a:hover {
 	color:white;
+	font-size:1.7vw;
+	transition:.7s;
 }
 
 .name {
+	cursor:crosshair;
+	height:26vh;
 	margin-top:5vh;
 	font-size:10vw;
 	text-align:center;
@@ -86,33 +95,59 @@ a {
 	border:3px solid #00ffff;
 	box-shadow:0px 0px 15px #0000ff;
 	background-color:#000033;
-	transition:1s;
+	transition:.7s;
 }
 
 .name:hover {
-	font-size:11vw;
+	font-size:10.5vw;
 	color:white;
-	transition:1s;
+	transition:.7s;
 }
 
 .copy {
-	font-size:15px;
+	cursor:crosshair;
+	height:6vh;
+	font-family:futura;
+	font-size:1.2vw;
+	font-style:italic;
 	text-align:center;
 	text-transform: uppercase;
-	border:3px solid #e600e6;
+	color:#00ffff;
+	text-shadow: 0px 0px 15px #0000ff;
+	border:3px solid #00ffff;
+	box-shadow:0px 0px 15px #0000ff;
+	background-color:#000033;
 	padding:10px;
 	margin-top:40px;
 	margin-bottom:40px;
+	transition:.7s;
+}
+
+.copy:hover {
+	font-size:1.3vw;
+	color:white;
+	transition:.7s;
 }
 
 .icon{
+	cursor:pointer;
+	width:250px;
+	height:250px;
+	border:3px solid magenta;
+	box-shadow:0px 0px 15px #ff66ff;
+	background-color:#330033;
+	color:magenta;
+	text-decoration:none;
 	position:fixed;
-	top:480px;
-	right:150px;
-	transition:0.2s;
+	font-size:14vw;
+	text-align:center;
+	top:390px;
+	right:220px;
+	transition:0.7s;
 }
 
 .icon:hover {
-	opacity:70%;
-	transition:0.2s;
+	font-size:14.5vw;
+	color:white;
+	transition:0.7s;
 }
