@@ -43,7 +43,7 @@ $(document).ready(function () {
     var div = $(".auto");
     var bottom = div.offset().top + div.height();
     console.log(bottom);
-    $("body,html").animate({ scrollTop: bottom }, 30000);
+    $("body,html").animate({ scrollTop: bottom }, 66000);
   }
 
 });

@@ -12,54 +12,69 @@ body::-webkit-scrollbar{
 /*end remove scrollbar*/
 
 a {
-	color:red;
+	color:white;
+	font-style:none;
 }
 
 /*menu*/
 
 .menu1 {
-	height:10px;
-	width:60px;
-	background-color:lightgray;
+	height:15px;
+	width:80px;
+	background-color:white;
 	position:fixed;
 	right:30px;
 	top:30px;
 	cursor:pointer;
+	transition:.5s;
 	z-index:10;
 }
 
 .menu1:hover {
-	opacity:75%;
+	height:19px;
+	width:86px;
+	right:27px;
+	top:28px;
+	transition:.5s;
 }
 
 .menu2 {
-	height:10px;
-	width:60px;
-	background-color:lightgray;
+	height:15px;
+	width:80px;
+	background-color:white;
 	position:fixed;
 	right:30px;
-	top:45px;
+	top:55px;
 	cursor:pointer;
+	transition:.5s;
 	z-index:10;
 }
 
 .menu2:hover {
-	opacity:75%;
+	height:19px;
+	width:86px;
+	right:27px;
+	top:53px;
+	transition:.5s;
 }
 
 .menu3 {
-	height:10px;
-	width:60px;
-	background-color:lightgray;
+	height:15px;
+	width:80px;
+	background-color:white;
 	position:fixed;
 	right:30px;
-	top:60px;
+	top:80px;
 	cursor:pointer;
 	z-index:10;
 }
 
 .menu3:hover {
-	opacity:75%;
+	height:19px;
+	width:86px;
+	right:27px;
+	top:78px;
+	transition:.5s;
 }
 
 /*end menu*/
@@ -80,7 +95,7 @@ a {
 
 .arrow {
 	width:30px;
-	border:solid black;
+	border:solid white;
 	border-width:0 30px 30px 0;
 	display:inline-block;
 	transform:rotate(45deg);
@@ -103,7 +118,8 @@ a {
 .essay1 {
 	width:100vw;
 	height:75vh;
-	background-color:grey;
+	background-color:#101010;
+	color:white;
 	position:fixed;
 	left:0px;
 	bottom:0px;
@@ -111,12 +127,14 @@ a {
 	margin-bottom:-75vh;
 	transition:.65s;
 	z-index:7;
+	font-style:none;
 }
 
 .essay2 {
 	width:100vw;
 	height:75vh;
-	background-color:grey;
+	background-color:#181818;
+	color:white;
 	position:fixed;
 	left:0px;
 	bottom:0px;
@@ -129,7 +147,8 @@ a {
 .essay3 {
 	width:100vw;
 	height:75vh;
-	background-color:grey;
+	background-color:#202020;
+	color:white;
 	position:fixed;
 	left:0px;
 	bottom:0px;
