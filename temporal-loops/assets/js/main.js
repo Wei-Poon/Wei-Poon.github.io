@@ -26,6 +26,42 @@ $(document).ready(function(){
 		$(".lv1Ext").removeClass("slide");
 	});
 
+  	$('div.flv5').click(function() {
+  		$('html, body').animate({
+    scrollTop: 
+   	$("div.lv5").offset().top
+  		}, 1000)
+	}), 
+ 	
+ 	$('div.flv4').click(function (){
+   		$('html, body').animate({
+    scrollTop:
+    $("div.lv4").offset().top
+    	}, 1000)
+  	}),
+  		
+  	$('div.flv3').click(function (){
+    	$('html, body').animate({
+    scrollTop:
+    $("div.lv3").offset().top
+    	}, 1000)
+  	})
+
+  	$('div.flv2').click(function (){
+    	$('html, body').animate({
+    scrollTop:
+    $("div.lv2").offset().top
+    	}, 1000)
+  	})
+
+  	$('div.flv1').click(function (){
+    	$('html, body').animate({
+    scrollTop:
+    $("div.lv1").offset().top
+    	}, 1000)
+  	})
+	
+
 	// $(".menu1").click(function () {
  //    	$(".essay1").addClass("slide");
  //    	$(".essay2").removeClass("slide");
