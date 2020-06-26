@@ -10,7 +10,7 @@ a {
 }
 
 .lesion {
-	width:350px;
+	width:500px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:90px;
@@ -40,7 +40,6 @@ a {
 	position:fixed;
 	bottom:200px;
 	left:30px;
-	font-family:arial;
 }
 
 .link {
@@ -67,7 +66,8 @@ a {
 	text-decoration:none;
 	color:magenta;
 	font-size:1.5vw;
-	font-family:futura;
+	font-family:helvetica;
+	font-weight:700;
 	font-style:italic;
 	text-shadow: 0px 0px 5px #0000ff; 
 	display:block;
@@ -87,9 +87,9 @@ a {
 	margin-top:5vh;
 	font-size:10vw;
 	text-align:center;
-	font-family:futura;
+	font-family:helvetica;
 	font-style:italic;
-	font-weight:;
+	font-weight:700;
 	color:#00ffff;
 	text-shadow: 0px 0px 15px #0000ff;
 	border:3px solid #00ffff;
@@ -107,7 +107,8 @@ a {
 .copy {
 	cursor:crosshair;
 	height:6vh;
-	font-family:futura;
+	font-family:helvetica;
+	font-weight:700;
 	font-size:1.2vw;
 	font-style:italic;
 	text-align:center;
