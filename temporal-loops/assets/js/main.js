@@ -25,8 +25,6 @@ $(document).ready(function(){
 
 	// end floor slide out
 
-	
-
 	// floor slide in
 
 	$('.lv5Int').click(function(){
