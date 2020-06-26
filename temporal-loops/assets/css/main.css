@@ -39,22 +39,27 @@ img {
 
 .float {
 	display:block;
+	cursor:pointer;
 	height:7vw;
 	width:7vw;
 	background-color:gray;
 	border:2px solid lightgray;
 	position:fixed;
 	left:14vw;
-	font-size:1.5vw;
+	font-size:1.2vw;
+	font-weight:bold;
+	text-transform:uppercase;
 	text-align:center;
-	line-height:7vw;	
+	line-height:7vw;
+	transition:.5s;	
 }
 
 /*floating slidebar hover*/
 
 .float:hover {
-	cursor:pointer;
 	opacity:80%;
+	font-size:1.4vw;
+	transition:.5s;
 }
 
 /*end floating sidebar hover*/
