@@ -1,0 +1,154 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	background-color:#1a001a;
+}
+
+a {
+	color:magenta;
+	text-shadow: 0px 0px 3px #ff66ff; 
+
+}
+
+.lesion {
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:90px;
+	transform:skew(0deg);
+	border:3px solid magenta;
+	box-shadow:0px 0px 15px #ff66ff;
+	background-color:#330033;
+	transition:1s;
+}
+
+.lesion img {
+	width:100%;
+	margin:auto;
+	/*display:block; to remove
+	descender element and to
+	display at 100%*/
+	display:block;
+}
+
+.lesion:hover {
+	transform:skew(-5deg);
+	transition:1s;
+	cursor:crosshair;
+}
+
+.links {
+	position:fixed;
+	bottom:200px;
+	left:30px;
+}
+
+.link {
+	width:500px;
+	height:50px;
+	border:3px solid magenta;
+	box-shadow:0px 0px 15px #ff66ff;
+	background-color:#330033;
+	padding-top:7px;
+	margin-bottom:-3px;
+}
+
+.link2 {
+	width:250px;
+	height:50px;
+	border:3px solid magenta;
+	box-shadow:0px 0px 15px #ff66ff;
+	background-color:#330033;
+	padding-top:7px;
+	margin-bottom:-3px;
+}
+
+.links a {
+	text-decoration:none;
+	color:magenta;
+	font-size:1.5vw;
+	font-family:helvetica;
+	font-weight:700;
+	font-style:italic;
+	display:block;
+	transition:.7s;
+	z-index:2;
+}
+
+.links a:hover {
+	color:white;
+	font-size:1.7vw;
+	transition:.7s;
+}
+
+.name {
+	cursor:crosshair;
+	height:26vh;
+	margin-top:5vh;
+	font-size:10vw;
+	text-align:center;
+	font-family:helvetica;
+	font-style:italic;
+	font-weight:700;
+	color:#00ffff;
+	text-shadow: 0px 0px 15px #0000ff;
+	border:3px solid #00ffff;
+	box-shadow:0px 0px 15px #0000ff;
+	background-color:#000033;
+	transition:.7s;
+}
+
+.name:hover {
+	font-size:10.5vw;
+	color:white;
+	transition:.7s;
+}
+
+.copy {
+	cursor:crosshair;
+	height:6vh;
+	font-family:helvetica;
+	font-weight:700;
+	font-size:1.2vw;
+	font-style:italic;
+	text-align:center;
+	text-transform: uppercase;
+	color:#00ffff;
+	text-shadow: 0px 0px 15px #0000ff;
+	border:3px solid #00ffff;
+	box-shadow:0px 0px 15px #0000ff;
+	background-color:#000033;
+	padding:10px;
+	margin-top:40px;
+	margin-bottom:40px;
+	transition:.7s;
+}
+
+.copy:hover {
+	font-size:1.3vw;
+	color:white;
+	transition:.7s;
+}
+
+.icon{
+	cursor:pointer;
+	width:250px;
+	height:250px;
+	border:3px solid magenta;
+	box-shadow:0px 0px 15px #ff66ff;
+	background-color:#330033;
+	color:magenta;
+	text-decoration:none;
+	position:fixed;
+	font-size:12vw;
+	text-align:center;
+	bottom:200px;
+	right:220px;
+	transition:0.7s;
+}
+
+.icon:hover {
+	font-size:12.4vw;
+	color:white;
+	transition:0.7s;
+}
