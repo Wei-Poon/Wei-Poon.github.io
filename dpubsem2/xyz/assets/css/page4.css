@@ -1,0 +1,151 @@
+body {
+	background-color:black;
+}
+
+.row {
+	padding-top:1vw;
+	padding-left:1vw;
+	height:22vw;
+	background:linear-gradient(to left, yellow,deeppink);
+}
+
+.square {
+	width:20vw;
+	height:20vw;
+	display:inline-block;
+	background:linear-gradient(to right,yellow,orange);
+}
+
+.circle {
+	width:20vw;
+	height:20vw;
+	background-color:white;
+	border-radius:50%;
+	display:inline-block;
+	margin-left:1vw;
+	transition:0.5s;
+	background:linear-gradient(to right,orange,violet);
+}
+
+.circle:hover {
+	border-radius:10%;
+	transition:0.5s;
+}
+
+.rectangle {
+	width:4vw;
+	height:20vw;
+	background-color:gray;
+	display:inline-block;
+	transform:skew(25deg);
+	margin-left:2vw;
+	transition:0.5s;
+	background:linear-gradient(to right,violet,deeppink);
+}
+
+.rectangle:hover {
+	transform:skew(0deg);
+	transition:0.5s;
+}
+
+.sidetext {
+	transform:rotate(90deg);
+	font-family:helvetica;
+	font-size:7vw;
+	font-weight:900;
+	position:absolute;
+	color:deeppink;
+	top:7vw;
+	right:-6vw;
+}
+
+.text {
+	display:inline-block;
+	color:white;
+	margin-top:-3vw;
+	font-family:helvetica;
+	font-weight:900;
+	font-size:20vw;
+}
+
+.sir {
+	height:14vw;
+	width:14vw;
+	border-radius:50%;
+	background-color:white;
+}
+
+.overflow {
+	display:inline-block;
+	height:14vw;
+	width:23vw;
+	background-color:deeppink;
+	font-family:helvetica;
+	font-weight:900;
+	font-size:4vw;
+	margin-left:0.8vw;
+	color:orange;
+	line-height:11vw;
+	text-align:center;
+	overflow:scroll;
+}
+
+.overflow::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow2 {
+	display:inline-block;
+	height:14vw;
+	width:23vw;
+	background-color:deeppink;
+	font-family:helvetica;
+	font-weight:900;
+	font-size:4vw;
+	color:orange;
+	line-height:11vw;
+	text-align:center;
+	overflow:scroll;
+}
+
+.overflow2::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow3 {
+	display:inline-block;
+	height:4vw;
+	width:49vw;
+	background:linear-gradient(to right,orange,violet);
+	font-family:helvetica;
+	font-style:italic;
+	font-weight:;
+	font-size:3.5vw;
+	margin-top:5vw;
+	white-space:nowrap;
+	color:white;
+	overflow:scroll;
+}
+
+.overflow3::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow4 {
+	display:inline-block;
+	height:4vw;
+	width:49vw;
+	background:linear-gradient(to right,violet,deeppink);
+	font-family:helvetica;
+	font-style:italic;
+	font-weight:;
+	font-size:3.5vw;
+	margin-top:-2vw;
+	white-space:nowrap;
+	color:white;
+	overflow:scroll;
+}
+
+.overflow4::-webkit-scrollbar {
+  display: none;
+}

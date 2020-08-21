@@ -1,0 +1,47 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	text-align: center;
+}
+
+.mada {
+	font-size:6vh;
+	font-family:arial;
+	font-weight:bold;
+	margin-top:22vh;
+	animation:ripple 4s infinite alternate;
+}
+
+.b4 {
+	font-size:15vh;
+	font-family:times;
+	font-weight:bold;
+	font-style:italic;
+	color:fuchsia;
+}
+
+.text {
+	font-size:15vh;
+	font-family:times;
+	font-weight:bold;
+	font-style:italic;
+	color:deeppink;
+}
+
+
+@keyframes ripple {
+	0% {
+		color:aquamarine;
+		opacity:0%;
+
+	}
+	50% {
+		color:aquamarine;
+		opacity:0%;
+		font-size:6vh;
+
+	}
+	100% {
+		color:aquamarine;
+		font-size:12vh;
+	}
+} 

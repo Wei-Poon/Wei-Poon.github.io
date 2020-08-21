@@ -1,0 +1,63 @@
+body {
+	font-family: Helvetica;
+	text-align: center;
+}
+
+.top {
+	font-family:futura;
+	font-size:25vh;
+	position:fixed;
+	top:0px;
+	width:100vw;
+}
+
+.bottom {
+	font-family:times;
+	font-size:15vh;
+	font-weight:;
+	position:fixed;
+	bottom:0px;
+	color:white;
+	background-color:black;
+	width:100vw;
+}
+
+.title {
+	padding:0vh;
+	width:20vw;
+	height:6vh;
+	color:white;
+	font-size:5vh;
+	font-weight:lighter;
+	background-color:black;
+	position:fixed;
+	top:36vh;
+	left:15vw;
+	animation:rotate 5s infinite;
+}
+
+.col {
+	display:inline-block;
+	width:32vw;
+	font-weight:lighter;
+	font-size:10vh;
+	margin-top:55vh;
+	color:aquamarine;
+}
+
+@keyframes rotate {
+	50% {
+		width:10vw;
+		height:3vh;
+		font-size:2.5vh;
+		scale:50%;
+		opacity:0%;
+		transform:rotate(180deg);
+		top:39vh;
+		left:70vw;
+	}
+	100%{
+		opacity:100%;
+		transform:rotate(360deg);
+	}
+}

@@ -1,0 +1,43 @@
+body {
+	font-family:helvetica;
+	font-weight:bold;
+	text-align:center;
+}
+
+.col {
+	margin-top:4vh;
+	display:inline-block;
+	width:33vw;
+	text-align:center;
+	font-size:4vh;
+	font-weight:bold;
+	vertical-align:top;
+	color:aquamarine;
+	background-color:lightblue;
+	padding:4px;
+}
+
+.title {
+	width:40vw;
+	height:33vh;
+	padding:10vh;
+	font-size: 10vh;
+	background-color:aquamarine;
+	color:lightblue;
+	margin-top:7vh;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+
+/*.minis {
+	font-size:20vw;
+	text-align:center;
+}
+
+.cover {
+	color:white;
+}
+
+this was just a joke*/
