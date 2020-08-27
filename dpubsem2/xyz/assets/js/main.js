@@ -37,7 +37,7 @@ var word4 = [
   "Your journey begins here",
   "Your life is in danger",
   "Perhaps this is just a dream",
-  "..."
+  "...."
 ];
 
 var randomWord4 = word4[Math.floor(Math.random()*word4.length)];
