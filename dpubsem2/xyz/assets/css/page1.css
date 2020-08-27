@@ -1,43 +1,104 @@
 body {
 	font-family:helvetica;
-	font-weight:bold;
+	background:linear-gradient(to bottom,lightsalmon,coral 60%);
+	height:100vh;
+}
+
+.ess {
+	padding-top:3vw;
+	display:block;
+	width:100vw;
+	color:deeppink;
+	text-shadow:3px 2px orange;
+	font-size:4.5vw;
+	font-weight:900;
+	line-height:11vh;
+	animation:sloop 3s infinite;
+	text-transform:uppercase;
 	text-align:center;
 }
 
-.col {
-	margin-top:4vh;
-	display:inline-block;
-	width:33vw;
-	text-align:center;
-	font-size:4vh;
-	font-weight:bold;
-	vertical-align:top;
-	color:aquamarine;
-	background-color:lightblue;
-	padding:4px;
-}
-
-.title {
-	width:40vw;
-	height:33vh;
-	padding:10vh;
-	font-size: 10vh;
-	background-color:aquamarine;
-	color:lightblue;
-	margin-top:7vh;
+.text {
+	margin-top:6vw;
+	display:block;
+	font-weight:900;
 	margin-left:auto;
 	margin-right:auto;
+		animation:slide 2s;
+}
+
+.set {
+	margin-top:1.5vw;
+	display:inline-block;
+	width:50vw;
+	font-size:3vw;
+	-webkit-text-stroke:1px mediumspringgreen;
+	text-align:right;
+	color:transparent;
 
 }
 
+.span {
+	width:49vw;
+	display:inline-block;
+	color:mediumspringgreen;
+	text-align:left;
+	font-size:3vw;
+}
 
-/*.minis {
-	font-size:20vw;
+.bot {
+	color:springgreen;
+	font-size:5vw;
+	font-weight:900;
+	width:100vw;
 	text-align:center;
+	margin-top:5vw;
+	animation:do 2s infinite alternate;
 }
 
-.cover {
-	color:white;
+@keyframes sloop {
+	0% {
+		opacity:0%;
+		font-size:0vw;
+	}
+	20% {
+		opacity:0%;
+	}
+	50% {
+		opacity:30%;
+		font-size:4.5vw;
+	}
+	55% {
+		opacity:40%;
+		margin-right:1.3vw;
+	}
+	100% {
+		opacity:0%;
+		margin-right:0;
+	}
+
 }
 
-this was just a joke*/
+@keyframes slide {
+	0% {
+		margin-left:-50vw;
+		opacity:0%;
+	}
+		30% {
+		opacity:0%;
+	}
+	100% {
+		margin-left:0vw;
+	}
+}
+
+@keyframes do {
+	0% {
+		opacity:40%;
+		font-size:6vw;
+	}
+	100% {
+		opacity:100%;
+		font-size:5vw;
+	}
+}
