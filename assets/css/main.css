@@ -1,7 +1,7 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
-	background-color:#1a001a;
+	background-color:white;
 }
 
 a {
@@ -15,20 +15,16 @@ a {
 	
 }
 
-.sem1 {
-	margin-top:2vw;
-}
-
 .link {
 	width:100vw;
 	height:50px;
-	border:3px solid magenta;
+	border-bottom:3px solid magenta;
 	text-align:center;
 	box-shadow:0px 0px 15px #ff66ff;
-	background-color:#330033;
 	padding-top:7px;
-	margin-bottom:-0.2vw;
+	margin-top:1vw;
 }
+
 
 /*.link2 {
 	width:250px;
@@ -53,7 +49,7 @@ a {
 }
 
 .links a:hover {
-	color:white;
+	color:#00ffff;
 	font-size:1.7vw;
 	transition:.7s;
 }
@@ -61,7 +57,8 @@ a {
 .name {
 	cursor:crosshair;
 	height:8vw;
-	margin-top:5vh;
+	margin-top:2vw;
+	margin-bottom:3vw;
 	font-size:7vw;
 	text-align:center;
 	font-family:helvetica;
@@ -69,15 +66,14 @@ a {
 	font-weight:700;
 	color:#00ffff;
 	text-shadow: 0px 0px 15px #0000ff;
-	border:3px solid #00ffff;
+	border-bottom:3px solid #00ffff;
 	box-shadow:0px 0px 15px #0000ff;
-	background-color:#000033;
 	transition:.7s;
 }
 
 .name:hover {
 	font-size:7.5vw;
-	color:white;
+	color:deeppink;
 	transition:.7s;
 }
 
@@ -94,9 +90,8 @@ a {
 	text-transform: uppercase;
 	color:#00ffff;
 	text-shadow: 0px 0px 15px #0000ff;
-	border:3px solid #00ffff;
+	border-bottom:3px solid #00ffff;
 	box-shadow:0px 0px 15px #0000ff;
-	background-color:#000033;
 	padding:10px;
 	position:absolute;
 	bottom:2vw;
@@ -105,7 +100,7 @@ a {
 
 .copy:hover {
 	font-size:1.3vw;
-	color:white;
+	color:deeppink;
 	transition:.7s;
 }
 
@@ -113,9 +108,8 @@ a {
 	cursor:pointer;
 	width:250px;
 	height:250px;
-	border:3px solid magenta;
+	border-bottom:3px solid magenta;
 	box-shadow:0px 0px 15px #ff66ff;
-	background-color:#330033;
 	color:white;
 	text-decoration:none;
 	margin-top:2vw;
