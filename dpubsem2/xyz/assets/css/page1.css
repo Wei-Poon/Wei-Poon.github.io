@@ -1,6 +1,6 @@
 body {
 	font-family:helvetica;
-	background:linear-gradient(to bottom,lightsalmon,coral 70%);
+	background:linear-gradient(to bottom,coral,crimson 70%);
 	height:200vh;
 }
 
@@ -17,19 +17,18 @@ body::-webkit-scrollbar {
 	text-shadow:-4px -3px mediumspringgreen;
 	font-size:4.5vw;
 	font-weight:900;
-	animation:sloop 15s infinite alternate;
+	animation:sloop 6s infinite alternate;
 	text-transform:uppercase;
 	text-align:center;
 }
 
 .text {
-	font-family:times;
 	margin-top:5vw;
 	display:block;
 	font-weight:900;
 	margin-left:auto;
 	margin-right:auto;
-	animation:slide 3s;
+	animation:slide 1s;
 }
 
 .set {
@@ -61,7 +60,7 @@ body::-webkit-scrollbar {
 	text-align:center;
 	width:100vw;
 	margin-top:8vw;
-	animation:do 3s;
+	animation:do 1s;
 }
 
 @keyframes sloop {
@@ -69,15 +68,15 @@ body::-webkit-scrollbar {
 		opacity:0%;
 		font-size:0vw;
 	}
-	25% {
+	35% {
 		opacity:0%;
 		font-size:0vw;
 	}
-	35%{
+	45%{
 		opacity:0%;
 	}
 
-	75% {
+	85% {
 		opacity:100%;
 		font-size:9vw;
 		margin-bottom:5vw;
