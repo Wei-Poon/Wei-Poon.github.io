@@ -229,6 +229,7 @@ body {
 		display:none;
 	}
 	.container {
+		display:block;
 		overflow:scroll;
 	}
 	.next {
