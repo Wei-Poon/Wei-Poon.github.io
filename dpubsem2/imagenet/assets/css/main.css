@@ -193,7 +193,10 @@ body {
 	body{
 		background-image:linear-gradient(darkslateblue,palevioletred 20%,lightcoral,lightsalmon, sandybrown); 
 	}
-	.container .item {
+	img{
+		width:100vw;
+	}
+	.item {
 		width:100vw;
 		margin-top:4vw;
 		font-size:5vw;
