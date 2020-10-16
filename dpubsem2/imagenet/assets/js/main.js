@@ -44,7 +44,7 @@ $(document).ready(function(){
 	});
 
 	
-		$(".container .item").resizable();
+	$(".container .item").resizable();
 	
 
 });

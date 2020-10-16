@@ -2,7 +2,7 @@ body {
 	font-family: teko,sans-serif;
 	font-size: 18px;
 	background-image:linear-gradient(darkslateblue,palevioletred,lightcoral,lightsalmon 80%, sandybrown);
-	min-height:100%;
+	min-height:100vh;
 }
 
 ::-webkit-scrollbar {
