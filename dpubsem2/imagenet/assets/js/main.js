@@ -43,8 +43,8 @@ $(document).ready(function(){
 		$(".container .item").draggable();
 	});
 
-	
-	$(".container .item").resizable();
-	
+	$(function(){
+		$(".container .item").resizable();
+	});
 
 });
