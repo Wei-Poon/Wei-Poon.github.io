@@ -108,7 +108,6 @@ body {
 .container {
 	z-index:8;
 	margin-top:15vw;
-	margin-bottom:5vw;
 	display:flex;
 	flex-wrap:wrap;
 	align-items:flex-end;
