@@ -193,10 +193,7 @@ body {
 	body{
 		background-image:linear-gradient(darkslateblue,palevioletred 20%,lightcoral,lightsalmon, sandybrown); 
 	}
-	img{
-		width:100vw;
-	}
-	.item {
+	#id {
 		width:100vw;
 		margin-top:4vw;
 		font-size:5vw;
@@ -229,7 +226,6 @@ body {
 		display:none;
 	}
 	.container {
-		display:block;
 		overflow:scroll;
 	}
 	.next {
