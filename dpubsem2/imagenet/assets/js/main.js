@@ -43,8 +43,8 @@ $(document).ready(function(){
 		$(".container .item").draggable();
 	});
 
-	$(function(){
-		$(".about").resizable();
-	});
+	
+		$(".container .item").resizable();
+	
 
 });

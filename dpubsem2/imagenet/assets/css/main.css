@@ -2,6 +2,7 @@ body {
 	font-family: teko,sans-serif;
 	font-size: 18px;
 	background-image:linear-gradient(darkslateblue,palevioletred,lightcoral,lightsalmon 80%, sandybrown);
+	min-height:100%;
 }
 
 ::-webkit-scrollbar {
@@ -193,7 +194,7 @@ body {
 	body{
 		background-image:linear-gradient(darkslateblue,palevioletred 20%,lightcoral,lightsalmon, sandybrown); 
 	}
-	#draggable {
+	.item {
 		width:100vw;
 		margin-top:4vw;
 		font-size:5vw;
