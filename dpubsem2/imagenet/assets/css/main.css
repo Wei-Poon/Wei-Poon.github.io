@@ -107,14 +107,15 @@ body {
 
 .container {
 	z-index:8;
-	width:25vw;
 	margin-top:15vw;
+	margin-bottom:5vw;
 	display:flex;
 	flex-wrap:wrap;
 	align-items:flex-end;
 }
 
 .item {
+	width:25vw;
 	text-align:center;
 	color:transparent;
 	font-weight:200;
@@ -130,26 +131,12 @@ body {
 	cursor:grabbing;
 }
 
-.item.small {
-	/*adjacent classes*/
-	width:7vw;
-}
-
-.item.large {
-	width:25vw;
-}
-
-.item .small {
-	/*empty space means parent and child divs*/
-}
-
 .item.hide {
 	display:none;
 }
 
 .item img {
 	max-width:100%;
-	display:block;
 	margin:auto;
 	padding-bottom:10px;
 }
@@ -223,7 +210,6 @@ body {
 		display:none;
 	}
 	.container {
-		width:100vw;
 		overflow:scroll;
 	}
 	.next {
