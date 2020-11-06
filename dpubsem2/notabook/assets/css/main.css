@@ -233,7 +233,13 @@ p.noindent {
 	border-top:.3vw solid #001133;
 	border-bottom:.3vw solid #001133;
 	background-size:cover;
+	color:transparent;
+	transition:2s;
+}
+
+.comp:hover {
 	color:#001133;
+	transition:2s;
 }
 
 .half {
