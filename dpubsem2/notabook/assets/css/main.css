@@ -1,0 +1,246 @@
+body {
+	background-color:white;
+	color:#001133;
+	font-size:40px;
+	line-height:42px;
+	font-family:arial;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+	font-size:14vw;
+	line-height:11vw;
+	letter-spacing:-15px;
+	text-align:left;
+	font-family:arial;
+	font-weight:700;
+	color:white;
+	margin-left:2vw;
+}
+
+.howdoes {
+	margin-top:2.5vw;
+	animation-name:blend;
+	animation-duration:15s;
+	animation-fill-mode:forwards;
+}
+
+.cap {
+	font-weight:300;
+	letter-spacing:-25px;
+	font-size:12.5vw;
+	color:red;
+}
+
+.therest {
+	animation-name:blend;
+	animation-duration:15s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blend {
+	100% {
+		color:#001133;
+	}
+}
+
+h2 {
+	font-weight:700;
+	letter-spacing:-10px;
+	font-size:10vw;
+	line-height:9vw;
+	color:red;
+	/*-webkit-text-stroke: .5px white;*/
+}
+
+h3 {
+	font-weight:700;
+	letter-spacing:-10px;
+	font-size:8.6vw;
+	line-height:7vw;
+}
+
+h4 {
+	font-size:12vw;
+	font-weight:700;
+	color:red;
+	margin-top:15vw;
+	letter-spacing:-10px;
+}
+
+h5 {
+	font-size:30px;
+	line-height:32px;
+}
+
+p {
+	font-size:35px;
+	line-height:40px;
+	letter-spacing:-1px;
+	font-weight:300;
+	margin-bottom:1.5vw;
+}
+
+.hero {
+	width:100vw;
+	height:55vw;
+	text-align:center;
+	text-transform:uppercase;
+	margin-top:5vw;
+	margin-bottom:5vw;
+	border-top:.7vw solid red;
+	border-bottom:.7vw solid red;
+	background-size:cover;
+}
+
+.hero2 {
+	width:100vw;
+	height:52vw;
+	text-align:center;
+	text-transform:uppercase;
+	margin-top:5vw;
+	border-top:.7vw solid red;
+	background-size:cover;
+}
+
+.img img {
+	width:42vw;
+	padding-left:5%;
+	margin-bottom:.7vw;
+}
+
+.still {
+	width:70vw;
+	height:40vw;
+	margin-left:15vw;
+	margin-top:4vw;
+	margin-bottom:6vw;
+	background-size:cover;
+	text-align:center;
+	padding-top:16%;
+	color:white;
+}
+
+.one {
+	background-image:url(../images/mirrors6.jpg);
+	padding:17%;
+}
+
+.two {
+	background-image:url(../images/farcry.jpg);
+	padding-top:12%;
+}
+
+.three {
+	background-image:url(../images/mirrors2.jpg);
+	padding-top:8%;
+}
+
+.four {
+	background-image:url(../images/aco.jpeg);
+	padding-top:4%;
+}
+
+.five {
+	background-image:url(../images/mirrors3.jpg);
+	padding-top:8%;
+}
+
+.six {
+	background-image:url(../images/tw3.jpg);
+}
+
+.seven {
+	background-image:url(../images/mirrors1.jpg);
+	padding-top:23%;
+}
+
+.sub1 {
+	padding-left:14%;
+	border-bottom:2vw solid red;
+	height:9vw;
+	width:35%;
+	margin-bottom:5vw;
+}
+
+.sub2 {
+	padding-left:28%;
+	border-bottom:2vw solid red;
+	height:9vw;
+	width:50%;
+	margin-bottom:5vw;
+}
+
+.sub3 {
+	padding-left:43%;
+	border-bottom:2vw solid red;
+	height:9vw;
+	width:65%;
+	margin-bottom:5vw;
+}
+
+.sub4 {
+	padding-left:52%;
+	border-bottom:2vw solid red;
+	height:9vw;
+	width:80%;
+	margin-bottom:5vw;
+}
+
+.red {
+	color:red;
+}
+
+.footnote p {
+	font-size:22px;
+	line-height:22px;
+	width:50%;
+	color:gainsboro;
+	font-family:arial;
+	margin-bottom:20px;
+}
+
+.text p {
+	text-indent:7vw;
+	text-align:justify;
+	padding-left:4vw;
+	padding-right:4vw;
+}
+
+p.noindent {
+	text-indent:0px;
+}
+
+.container {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.first {
+	margin-top:10vw;
+}
+
+.comp {
+	width:50%;
+	height:30vw;
+	text-align:center;
+	text-transform:uppercase;
+	margin-top:4vw;
+	margin-bottom:5vw;
+	border-top:.3vw solid #001133;
+	border-bottom:.3vw solid #001133;
+	background-size:cover;
+	color:#001133;
+}
+
+.half {
+	width:50%;
+}
+
+.half p {
+	padding-right:2vw;
+}
+
