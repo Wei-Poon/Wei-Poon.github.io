@@ -94,6 +94,9 @@ p {
 	border-top:.7vw solid red;
 	border-bottom:.7vw solid red;
 	background-size:cover;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
 }
 
 .hero2 {
@@ -104,6 +107,9 @@ p {
 	margin-top:5vw;
 	border-top:.7vw solid red;
 	background-size:cover;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
 }
 
 .img img {
@@ -122,31 +128,29 @@ p {
 	text-align:center;
 	padding-top:16%;
 	color:white;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
 }
 
 .one {
 	background-image:url(../images/mirrors6.jpg);
-	padding:17%;
 }
 
 .two {
 	background-image:url(../images/farcry.jpg);
-	padding-top:12%;
 }
 
 .three {
 	background-image:url(../images/mirrors2.jpg);
-	padding-top:8%;
 }
 
 .four {
 	background-image:url(../images/aco.jpeg);
-	padding-top:4%;
 }
 
 .five {
 	background-image:url(../images/mirrors3.jpg);
-	padding-top:8%;
 }
 
 .six {
@@ -155,7 +159,6 @@ p {
 
 .seven {
 	background-image:url(../images/mirrors1.jpg);
-	padding-top:23%;
 }
 
 .sub1 {
@@ -232,6 +235,9 @@ p.noindent {
 	margin-bottom:5vw;
 	border-top:.3vw solid #001133;
 	border-bottom:.3vw solid #001133;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
 	background-size:cover;
 	color:transparent;
 	transition:2s;
