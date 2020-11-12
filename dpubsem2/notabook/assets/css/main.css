@@ -21,8 +21,69 @@ h1 {
 	margin-left:2vw;
 }
 
+.nav {
+	position:fixed;
+	top:1.5vw;
+	right:1.5vw;
+	width:3vw;
+	height:3vw;
+	background-color:red;
+	transition:.5s;
+	z-index:2;
+}
+
+.nav:hover {
+	opacity:50%;
+	transition:.5s;
+}
+
+.slide {
+	display:;
+	width:40%;
+	height: 100vh;
+	background-color:rgba(0, 17, 51, 98%);
+	padding-top:8vw;
+	padding-left:1.5vw;
+	padding-right:1.5vw;
+	color:red;
+	position:fixed;
+	top:0px;
+	right:0px;
+	margin-right:-50vw;
+	transition:.5s;
+	z-index:1;
+}
+
+.slide.active {
+	margin-right:0vw;
+	transition:.5s;
+}
+
+a {
+	margin-bottom:1vw;
+	display:block;
+	color:red;
+	font-size:45px;
+	border-bottom:.2vw solid red;
+	text-decoration:none;
+}
+
+iframe {
+	width:37vw;
+	margin-top:2vw;
+}
+
+/*titles*/
+
 .howdoes {
 	margin-top:2.5vw;
+	animation-name:blend;
+	animation-duration:15s;
+	animation-fill-mode:forwards;
+}
+
+.ilike {
+	padding-top:8vw;
 	animation-name:blend;
 	animation-duration:15s;
 	animation-fill-mode:forwards;
@@ -35,8 +96,23 @@ h1 {
 	color:red;
 }
 
+.cap2 {
+	font-weight:300;
+	letter-spacing:-25px;
+	font-size:12.5vw;
+	color:red;
+	text-transform:uppercase;
+}
+
 .therest {
 	animation-name:blend;
+	animation-duration:15s;
+	animation-fill-mode:forwards;
+}
+
+.therest2 {
+	animation-name:blend;
+	animation-delay:5s;
 	animation-duration:15s;
 	animation-fill-mode:forwards;
 }
@@ -46,6 +122,17 @@ h1 {
 		color:#001133;
 	}
 }
+
+@keyframes fade {
+	25% {
+		color:white;
+	}
+	100% {
+		color:#001133;
+	}
+}
+
+/*end titles*/
 
 h2 {
 	font-weight:700;
@@ -74,6 +161,17 @@ h4 {
 h5 {
 	font-size:30px;
 	line-height:32px;
+}
+
+h6 {
+	font-weight:500;
+	letter-spacing:-1px;
+	font-size:4vw;
+	line-height:4.5vw;
+	padding-left:6vw;
+	padding-right:6vw;
+	margin-bottom:4vw;
+	color:red;
 }
 
 p {
@@ -110,6 +208,33 @@ p {
 	flex-wrap:wrap;
 	align-content:center;
 	justify-content:center;
+}
+
+.heroone {
+	width:100vw;
+	height:52vw;
+	text-transform:uppercase;
+	margin-top:5vw;
+	border-top:.7vw solid red;
+	border-bottom:.7vw solid red;
+	background-size:cover;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
+	justify-content:center;
+}
+
+.herotwo {
+	width:100vw;
+	height:52vw;
+	text-align:center;
+	text-transform:uppercase;
+	margin-top:5vw;
+	border-top:.7vw solid red;
+	background-size:cover;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
 }
 
 .img img {
@@ -160,8 +285,41 @@ p {
 	background-image:url(../images/mirrors1.jpg);
 }
 
+/*images for article 1*/
+
+.one2 {
+	background-image:url(../images/kojima.jpg);
+}
+
+.two2 {
+	background-image:url(../images/tlou2.jpg);
+	background-size:500px;
+}
+
+.three2 {
+	background-image:url(../images/tlou.jpg);
+}
+
+.four2 {
+	background-image:url(../images/sotc2.jpg);
+}
+
+.five2 {
+	background-image:url(../images/sable.png);
+}
+
+/*end images for article 1*/
+
 .sub1 {
 	padding-left:14%;
+	border-bottom:2vw solid red;
+	height:9vw;
+	width:35%;
+	margin-bottom:5vw;
+}
+
+.sub1one {
+	padding-left:13%;
 	border-bottom:2vw solid red;
 	height:9vw;
 	width:35%;
@@ -252,7 +410,27 @@ p.noindent {
 	width:50%;
 }
 
+.third {
+	width:100vw;
+	margin-left:4vw;
+}
+
+.third2 {
+	width:100vw;
+	text-align:center;
+}
+
+.third3 {
+	width:92vw;
+	text-align:right;
+}
+
 .half p {
 	padding-right:2vw;
 }
+
+.gap {
+	margin-top:2vw;
+}
+
 
