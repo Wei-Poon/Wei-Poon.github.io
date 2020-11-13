@@ -62,7 +62,6 @@ h1 {
 	display:;
 	width:40%;
 	height:100vh;
-	/*background-color:rgba(0, 17, 51, 97%);*/
 	background-color:white;
 	border-left:0.2vw solid red;
 	padding-top:8vw;
@@ -101,6 +100,7 @@ iframe {
 .howdoes {
 	margin-top:2.5vw;
 	animation-name:blend;
+	animation-delay:2s;
 	animation-duration:10s;
 	animation-fill-mode:forwards;
 	animation-play-state:paused;
@@ -126,6 +126,7 @@ iframe {
 .therest {
 	animation-name:blend;
 	animation-duration:10s;
+	animation-delay:2s;
 	animation-fill-mode:forwards;
 	animation-play-state:paused;
 }
