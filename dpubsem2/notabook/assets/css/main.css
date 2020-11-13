@@ -15,7 +15,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-	background:rgba(220 ,220 ,220);
+	background:rgb(220 ,220 ,220);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -24,6 +24,11 @@ body {
 }
 
 /*end scrollbar*/
+
+::selection {
+	background:red;
+	color:white;
+}
 
 h1 {
 	font-size:14vw;
@@ -50,6 +55,7 @@ h1 {
 .nav:hover {
 	opacity:50%;
 	transition:.5s;
+	cursor:pointer;
 }
 
 .slide {
@@ -95,8 +101,9 @@ iframe {
 .howdoes {
 	margin-top:2.5vw;
 	animation-name:blend;
-	animation-duration:15s;
+	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-play-state:paused;
 }
 
 .ilike {
@@ -104,8 +111,9 @@ iframe {
 	color:#001133;
 	opacity:0%;
 	animation-name:blendd;
-	animation-duration:15s;
+	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-play-state:paused;
 }
 
 .cap {
@@ -117,15 +125,21 @@ iframe {
 
 .therest {
 	animation-name:blend;
-	animation-duration:15s;
+	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-play-state:paused;
 }
 
 .therest2 {
 	animation-name:blend;
-	animation-delay:5s;
-	animation-duration:15s;
+	animation-delay:2s;
+	animation-duration:10s;
 	animation-fill-mode:forwards;
+	animation-play-state:paused;
+}
+
+.paused {
+	animation-play-state:running;
 }
 
 @keyframes blend {
@@ -152,15 +166,34 @@ iframe {
 /*end titles*/
 
 .play {
-	
+	z-index:3;
+	position:fixed;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
+	justify-content:center;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	background-color:white;
+}
+
+.button {
 	margin:auto;
-	margin-top:15vw;
-	margin-bottom:15vw;
 	width:0;
 	height:0;
 	border-top: 10vw solid transparent;
 	border-left: 20vw solid red;
 	border-bottom: 10vw solid transparent;
+}
+
+.button:hover {
+	cursor:pointer;
+}
+
+.hide {
+	display:none;
 }
 
 h2 {

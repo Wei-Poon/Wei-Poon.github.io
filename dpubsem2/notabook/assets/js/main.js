@@ -5,4 +5,12 @@ $(document).ready(function(){
 		$('.slide').toggleClass('active');
 	});
 
+	$('.button').click(function(){
+		$('.play').toggleClass('hide');
+		$('.howdoes').toggleClass('paused');
+		$('.ilike').toggleClass('paused');
+		$('.therest').toggleClass('paused');
+		$('.therest2').toggleClass('paused');
+	});
+
 });
