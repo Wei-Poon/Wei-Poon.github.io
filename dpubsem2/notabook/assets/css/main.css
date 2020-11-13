@@ -84,7 +84,9 @@ iframe {
 
 .ilike {
 	padding-top:8vw;
-	animation-name:blend;
+	color:#001133;
+	opacity:0%;
+	animation-name:blendd;
 	animation-duration:15s;
 	animation-fill-mode:forwards;
 }
@@ -94,14 +96,6 @@ iframe {
 	letter-spacing:-25px;
 	font-size:12.5vw;
 	color:red;
-}
-
-.cap2 {
-	font-weight:300;
-	letter-spacing:-25px;
-	font-size:12.5vw;
-	color:red;
-	text-transform:uppercase;
 }
 
 .therest {
@@ -120,6 +114,12 @@ iframe {
 @keyframes blend {
 	100% {
 		color:#001133;
+	}
+}
+
+@keyframes blendd {
+	100% {
+		opacity:100%;
 	}
 }
 
