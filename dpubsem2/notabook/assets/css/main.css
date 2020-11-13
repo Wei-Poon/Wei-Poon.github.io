@@ -4,11 +4,25 @@ body {
 	font-size:40px;
 	line-height:42px;
 	font-family:arial;
+	overflow:overlay;
 }
 
+/*scrollbar*/
+
 ::-webkit-scrollbar {
-  display: none;
+  	width:.7vw;
 }
+
+::-webkit-scrollbar-track {
+	background:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color:red;
+	box-shadow:0 -100vh 0 100vh red;
+}
+
+/*end scrollbar*/
 
 h1 {
 	font-size:14vw;
