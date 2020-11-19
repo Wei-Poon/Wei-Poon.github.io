@@ -11,6 +11,7 @@ $(document).ready(function(){
 		$('.ilike').toggleClass('paused');
 		$('.therest').toggleClass('paused');
 		$('.therest2').toggleClass('paused');
+		$('.landingsub').toggleClass('paused');
 	});
 
 });
