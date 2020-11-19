@@ -1,8 +1,8 @@
 body {
 	background-color:white;
 	color:#001133;
-	font-size:40px;
-	line-height:42px;
+	font-size:2vw;
+	line-height:2.2vw;
 	font-family:arial;
 }
 
@@ -88,11 +88,6 @@ a {
 	font-size:45px;
 	border-bottom:.2vw solid red;
 	text-decoration:none;
-}
-
-iframe {
-	width:37vw;
-	margin-top:2vw;
 }
 
 /*titles*/
@@ -238,9 +233,9 @@ h6 {
 }
 
 p {
-	font-size:35px;
-	line-height:40px;
-	letter-spacing:-1px;
+	font-size:2.12vw;
+	line-height:2.32vw;
+	letter-spacing:-.05vw;
 	font-weight:300;
 	margin-bottom:1.5vw;
 }
@@ -278,6 +273,21 @@ p {
 	height:52vw;
 	text-transform:uppercase;
 	margin-top:5vw;
+	border-top:.7vw solid red;
+	border-bottom:.7vw solid red;
+	background-size:cover;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
+	justify-content:center;
+}
+
+.herojuan {
+	width:100vw;
+	height:52vw;
+	text-transform:uppercase;
+	margin-top:5vw;
+	margin-bottom:5vw;
 	border-top:.7vw solid red;
 	border-bottom:.7vw solid red;
 	background-size:cover;
@@ -372,6 +382,30 @@ p {
 }
 
 /*end images for article 1*/
+
+/*images for article 3*/
+
+.one3 {
+	background-image:url(../images/ueda1.jpg);
+}
+
+.two3 {
+	background-image:url(../images/ueda2.jpg);
+}
+
+.three3 {
+	background-image:url(../images/ueda3.jpg);
+}
+
+.four3 {
+	background-image:url(../images/ueda4.png);
+}
+
+.five3 {
+	background-image:url(../images/ueda7.png);
+}
+
+/*end images for article 3*/
 
 .sub1 {
 	padding-left:14%;
