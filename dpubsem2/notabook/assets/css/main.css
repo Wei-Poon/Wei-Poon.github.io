@@ -130,7 +130,7 @@ a {
 
 .cap {
 	font-weight:300;
-	letter-spacing:-25px;
+	letter-spacing:-20px;
 	font-size:12.5vw;
 	color:red;
 }
@@ -138,8 +138,8 @@ a {
 .cap2 {
 	margin-top:8vw;
 	font-weight:300;
-	letter-spacing:-15px;
-	font-size:12vw;
+	letter-spacing:-20px;
+	font-size:12.5vw;
 	color:red;
 }
 
