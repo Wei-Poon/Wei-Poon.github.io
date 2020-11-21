@@ -1,0 +1,340 @@
+body {
+	font-family:arial;
+	font-size: 32px;
+	color:white;
+	overflow-x:hidden;
+}
+
+/*::-webkit-scrollbar {
+  	display:none;
+}*/
+
+::-webkit-scrollbar {
+  	width:.5vw;
+  	z-index:10; 
+  	overflow:overlay;	
+}
+
+::-webkit-scrollbar-track {
+	background:white;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color:grey;
+	box-shadow:0 -100vh 0 100vh grey;
+}
+
+.header {
+	z-index:3;
+	position:fixed;
+	width:100vw;
+	height:3vw;
+	color:white;
+	background-color:/*(51, 153, 255, 95%)*/rgba(0,0,0,95%);
+	display:flex;
+	flex-wrap:wrap;
+	font-weight:700;
+	letter-spacing:-.15vw;
+	text-align:center;
+	justify-content:center;
+	align-content:center;
+	text-transform:uppercase;
+	font-size:2.5vw;
+}
+
+.header2 {
+	z-index:3;
+	position:fixed;
+	color:black;
+	width:100vw;
+	height:3vw;
+	background-color:rgba(242, 242, 242, 95%);
+	display:none;
+	font-weight:700;
+	letter-spacing:-.15vw;
+	text-align:center;
+	justify-content:center;
+	align-content:center;
+	text-transform:uppercase;
+	font-size:2.5vw;
+}
+
+.switch {
+	z-index:3;
+	position:fixed;
+	bottom:2vw;
+	right:2vw;
+	width:3vw;
+	height:3vw;
+	background-color:white;
+	border:.2vw solid black;
+	transition:.5s;
+}
+
+.switch:hover {
+	opacity:80%;
+	cursor:pointer;
+	transition:.5s;
+}
+
+.land {
+	z-index:-2;
+	position:fixed;
+	background-image:url(../images/zerohero.jpg);
+	background-repeat:no-repeat;
+	height:100vh;
+	width:100vw;
+	background-size:cover;
+}
+
+.gray {
+	filter:grayscale(100%) brightness(50%);
+}
+
+.blank {
+	height:100vh;
+	width:100vw;
+	text-align:center;
+	font-size:24vw;
+	font-weight:700;
+	letter-spacing:-1.2vw;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
+	justify-content:center;
+}
+
+.blank2 {
+	color:white;
+	opacity:90%;
+	height:100vh;
+	width:100vw;
+	text-align:center;
+	font-size:24vw;
+	font-weight:700;
+	letter-spacing:-1.2vw;
+	display:none;
+	align-content:center;
+	justify-content:center;
+}
+
+.container {
+	display:flex;
+	flex-wrap:wrap;
+	background:/*rgba(204, 230, 255, 98%)*/rgba(242,242,242,95%);
+	color:black;
+}
+
+.cont {
+	display:flex;
+	flex-wrap:wrap;
+	height:100vh;
+	background-color:white;
+}
+
+.container2 {
+	display:none;
+	background:rgba(0, 0, 0, 98%);
+	color:white;
+}
+
+.subt {
+	width:100vw;
+	display:flex;
+	flex-wrap:wrap;
+	text-align:center;
+	justify-content:center;
+	margin-top:6vw;
+	margin-left:22vw;
+	margin-right:22vw;
+	font-size:5vw;
+	font-weight:700;
+	letter-spacing:-.3vw;
+	text-transform:uppercase;
+
+}
+
+p {
+	text-align:center;
+	font-size:2.2vw;
+	letter-spacing:-.07vw;
+}
+
+h2 {
+	text-align:center;
+	font-size:3.2vw;
+	font-style:italic;
+	font-weight:700;
+	letter-spacing:-.15vw;
+}
+
+h3 {
+	font-size:2.2vw;
+	font-weight:300;
+	letter-spacing:-.15vw;
+	text-align:center;
+	align-content:center;
+	justify-content:center;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.text p {
+	text-indent:3vw;
+	text-align:justify;
+	padding-left:10vw;
+	padding-right:10vw;
+	padding-top:3vw;
+}
+
+.noindent {
+	text-indent:0vw;
+}
+
+.achh {
+	margin-left:10vw;
+	margin-right:10vw;
+	margin-top:4vw;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.line {
+	height:10vw;
+	width:50%;
+	border-right:.1vw solid black;
+}
+
+.line2 {
+	height:10vw;
+	width:50%;
+	border-left:.1vw solid black;
+}
+
+.lines {
+	height:5vw;
+	width:50%;
+	border-right:.1vw solid white;
+}
+
+.line2s {
+	height:5vw;
+	width:50%;
+	border-left:.1vw solid white;
+}
+
+
+.half {
+	width:50%;
+	height:15vw;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-content:center;
+	text-align:center;
+}
+
+.half2{
+	width:50%;
+	height:15vw;
+	padding-left:8vw;
+	display:flex;
+	flex-wrap:wrap;
+	text-align:left;
+	align-content:center;	
+}
+
+.gal {
+	display:flex;
+	flex-wrap:wrap;
+	padding-top:2vw;
+	margin-top:2vw;
+}
+
+img {
+	height:24.3vw;
+	width:24.3vw;
+	transition:.5s;
+}
+
+.halff {
+	width:49.5vw;
+	
+}
+
+.halff img:hover {
+	filter:brightness(60%);
+	transition:.5s;
+}
+
+.top {
+	margin-bottom:1.1vw;
+}
+
+.hero {
+	width:50vw;
+	height:50vw;
+}
+
+.gal2 {
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:4vw;
+	background-image:url(../images/zerohero.jpg);
+	background-size:cover;
+	filter:grayscale(100%);
+}
+
+.zero1 {
+	background-color:rgba(0,0,0,65%);
+	width:49.5vw;
+	height:15vw;
+	margin-top:.4vw;
+	transition:.5s;
+}
+
+.zero1:hover{
+	background-color:rgba(0,0,0,30%);
+	transition:.5s;
+}
+
+.zero2 {
+	background-color:rgba(0,0,0,65%);
+	width:49.5vw;
+	height:15vw;
+	margin-left:.4vw;
+	margin-top:.4vw;
+}
+
+.zero2:hover{
+	background-color:rgba(0,0,0,30%);
+	transition:.5s;
+}
+
+a {
+	color:white;
+	text-decoration:none;
+}
+
+.left {
+	padding-left:.5vw;
+}
+
+.container2 img {
+	filter:grayscale(100%) brightness(70%);
+}
+
+.last {
+	margin-bottom:6vw;
+}
+
+.hide {
+	display:none;
+}
+
+.show {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+
