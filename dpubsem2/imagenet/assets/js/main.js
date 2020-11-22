@@ -10,6 +10,7 @@ $(document).ready(function(){
 		$('.item.short').removeClass('hide');
 		$('.item.short').removeClass('half');
 		$('.item.short').removeClass('th');
+		$('.item.short').removeClass('qua');
 	});
 
 	$('.btn-oldold').click(function(){
@@ -33,6 +34,9 @@ $(document).ready(function(){
 	$('.btn-new').click(function(){
 		$('.item').addClass('hide');
 		$('.item.new').removeClass('hide');
+		$('.item.new').removeClass('qua');
+		$('.item.new').removeClass('half');
+		$('.item.new').addClass('th');
 	});
 
 	$('.btn-robot').click(function(){

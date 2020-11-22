@@ -12,6 +12,7 @@ $(document).ready(function(){
 		$('.therest').toggleClass('paused');
 		$('.therest2').toggleClass('paused');
 		$('.landingsub').toggleClass('paused');
+		window.scrollTo(0,0);
 	});
 
 });
