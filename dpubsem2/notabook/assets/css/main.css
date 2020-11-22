@@ -76,6 +76,16 @@ h1 {
 	z-index:1;
 }
 
+.link {
+	transition:.5s;
+}
+
+.link:hover {
+	opacity:50%;
+	transition:.5s;
+	cursor:pointer;
+}
+
 .slide.active {
 	margin-right:0vw;
 	transition:.5s;

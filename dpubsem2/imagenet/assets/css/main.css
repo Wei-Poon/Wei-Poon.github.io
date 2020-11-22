@@ -1,8 +1,20 @@
 body {
 	font-family: teko,sans-serif;
 	font-size: 18px;
-	background-image:linear-gradient(darkslateblue,palevioletred,lightcoral,lightsalmon 80%, sandybrown);
+	background:
+		linear-gradient(darkslateblue,palevioletred,lightcoral,lightsalmon 80%, sandybrown);		
 	min-height:100vh;
+	z-index:-2;
+	overflow-x:hidden;
+}
+
+.grid {
+	z-index:-1;
+	position:fixed;
+	top:0;
+	width:100vw;
+	height:100vh;
+	background-image:url(../images/grid.png)
 }
 
 ::-webkit-scrollbar {
@@ -29,14 +41,16 @@ body {
 
 .about {
 	color:white;
-	font-size:7vw;
-	line-height:125%;
+	font-size:5.5vw;
+	line-height:4.5vw;
 	text-align:center;
 	padding:13%;
 	z-index:13;
 	position:fixed;
-	display:block;
-	margin:auto;
+	justify-content:center;
+	align-content:center;
+	display:flex;
+	flex-wrap:wrap;
 	top:2%;
 	left:2%;
 	width:96%;
@@ -44,6 +58,15 @@ body {
 	opacity:90%;
 	border-radius:5px;
 	background-color:black;
+}
+
+.about p {
+	margin-top:4vw;
+	font-size:3vw;
+	line-height:3vw;
+	text-align:justify;
+	padding-left:6vw;
+	padding-right:6vw;
 }
 
 .about:hover {
@@ -107,7 +130,7 @@ body {
 
 .container {
 	z-index:8;
-	margin-top:15vw;
+	margin-top:10vw;
 	margin-bottom:5vw;
 	display:flex;
 	flex-wrap:wrap;
@@ -122,8 +145,22 @@ body {
 	font-size:1.5vw;
 }
 
+.th {
+	width:33.33vw
+}
+
+.half {
+	width:50vw;
+}
+
+.qua {
+	width:100vw;
+}
+
 .item:hover {
 	color:floralwhite;
+	filter:brightness(80%);
+	background-color:rgba(0,0,0,30%);
 	cursor:grab;
 }
 

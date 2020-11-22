@@ -41,6 +41,7 @@ $(document).ready(function(){
 		$('.blank').toggleClass('hide');
 		$('.blank2').toggleClass('show');
 		$('.land').toggleClass('gray');
+		window.scrollTo(0,0);
 	});
 
 });

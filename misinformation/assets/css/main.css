@@ -1,5 +1,5 @@
 body {
-	font-family:arial;
+	font-family:helvetica;
 	font-size: 32px;
 	color:white;
 	overflow-x:hidden;
@@ -80,11 +80,18 @@ body {
 .land {
 	z-index:-2;
 	position:fixed;
-	background-image:url(../images/zerohero.jpg);
-	background-repeat:no-repeat;
-	height:100vh;
+	height:auto;
 	width:100vw;
 	background-size:cover;
+}
+
+.zero {
+	top:0;
+	filter:brightness(70%);
+}
+
+.nairo {
+	bottom:0;
 }
 
 .gray {
@@ -125,13 +132,6 @@ body {
 	color:black;
 }
 
-.cont {
-	display:flex;
-	flex-wrap:wrap;
-	height:100vh;
-	background-color:white;
-}
-
 .container2 {
 	display:none;
 	background:rgba(0, 0, 0, 98%);
@@ -157,6 +157,7 @@ body {
 p {
 	text-align:center;
 	font-size:2.2vw;
+	font-weight:300;
 	letter-spacing:-.07vw;
 }
 
@@ -252,7 +253,7 @@ h3 {
 }
 
 img {
-	height:24.3vw;
+	height:24.86vw;
 	width:24.3vw;
 	transition:.5s;
 }
@@ -268,19 +269,30 @@ img {
 }
 
 .top {
-	margin-bottom:1.1vw;
+	padding-bottom:.3vw;
 }
 
 .hero {
 	width:50vw;
 	height:50vw;
+	filter:brightness(70%)grayscale(30%);
+
 }
 
 .gal2 {
 	display:flex;
 	flex-wrap:wrap;
 	margin-top:4vw;
-	background-image:url(../images/zerohero.jpg);
+	background-image:url(../images/zeroli.jpg);
+	background-size:cover;
+	filter:grayscale(100%);
+}
+
+.gal3 {
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:4vw;
+	background-image:url(../images/nairocu.jpg);
 	background-size:cover;
 	filter:grayscale(100%);
 }
