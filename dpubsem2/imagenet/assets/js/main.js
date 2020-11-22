@@ -45,11 +45,9 @@ $(document).ready(function(){
 		$('.item.robot').addClass('qua');
 	});
 
-	$('.btn-res').click(function(){
-		$('.item').removeClass('hide');
-		$('.item').removeClass('half');
-		$('.item').removeClass('th');
-		$('.item').removeClass('qua');
+	$('.btn-res').click(function refreshPage(){
+    	window.location.reload();
+    	window.scrollTo(0,0);
 	});
 
 	$(function(){
