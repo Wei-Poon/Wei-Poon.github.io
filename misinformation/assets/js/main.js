@@ -33,7 +33,11 @@
 $(document).ready(function(){
 	console.log('wattup');
 
-	$('.switch').click(function(){
+	$('.button').click(function(){
+		$('.slide').toggleClass('active');
+	});
+
+	$('.land2').click(function(){
 		$('.container').toggleClass('hide');
 		$('.container2').toggleClass('show');
 		$('.header').toggleClass('hide');
