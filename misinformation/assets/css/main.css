@@ -11,8 +11,8 @@ body {
 
 ::-webkit-scrollbar {
   	width:.5vw;
-  	z-index:10; 
-  	overflow:overlay;	
+  	z-index:10;
+  	overflow:overlay; 	
 }
 
 ::-webkit-scrollbar-track {
