@@ -78,12 +78,12 @@ body {
 
 a {
 	color:black;
-	text-decoration:none;
+	text-decoration:underline;
 	transition:.5s;
 }
 
  a:hover {
-	opacity:50%;
+	color:crimson;
 	transition:.5s;
 }
 
